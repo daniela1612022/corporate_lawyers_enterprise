@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de — Corporate Lawyers</title>
+
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts: Cormorant Garamond + Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__bar"></div>
+    <span class="loader__text">Corporate Lawyers</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-mark">CL</span>
+        <span class="nav__logo-text">Corporate<em>Lawyers</em></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#" class="nav__link">Inicio</a></li>
+        <li><a href="index.html" class="nav__link is-active">Acerca de</a></li>
+        <li><a href="#servicios" class="nav__link">Servicios</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+
+      <a href="#contacto" class="btn btn--outline nav__cta">Contáctenos</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="hero__grid-lines"></div>
+        <div class="hero__glow"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge reveal-up">
+            <span class="dot"></span> Firma jurídica especializada
+          </div>
+          <h1 class="hero__title reveal-up" style="--d:.1s">
+            Soluciones<br/>
+            <em class="gold-text">legales</em> que<br/>
+            protegen tu futuro
+          </h1>
+          <p class="hero__desc reveal-up" style="--d:.2s">
+            Asesorías y consultorías especializadas en materia legal y tributaria.
+            Acompañamiento personalizado con resultados concretos.
+          </p>
+          <div class="hero__actions reveal-up" style="--d:.3s">
+            <a href="#contacto" class="btn btn--gold">Hablar con un asesor</a>
+            <a href="#quienes-somos" class="btn btn--ghost">Conocer más &darr;</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal-right" style="--d:.2s">
+          <div class="hero__card">
+            <div class="hero__card-line"></div>
+            <span class="hero__card-label">Nuestra promesa</span>
+            <p class="hero__card-text">"La excelencia jurídica no es un lujo, es tu derecho."</p>
+            <div class="hero__card-divider"></div>
+            <div class="hero__card-stats">
+              <div>
+                <strong class="counter" data-target="15">0</strong><span>+</span>
+                <small>Años en el sector</small>
+              </div>
+              <div>
+                <strong class="counter" data-target="8">0</strong><span></span>
+                <small>Servicios especializados</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ══ MARQUEE ══ -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Derecho Laboral</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Asesoría Tributaria</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Consultoría Legal</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Derecho Corporativo</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Gestión de Contratos</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Protección Jurídica</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Derecho Laboral</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Asesoría Tributaria</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Consultoría Legal</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Derecho Corporativo</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Gestión de Contratos</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+        <span>Protección Jurídica</span><span class="sep"><i class="fa-solid fa-diamond"></i></span>
+      </div>
+    </div>
+
+    <!-- ══ QUIÉNES SOMOS ══ -->
+    <section class="section about" id="quienes-somos">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-grid__media reveal-left">
+            <div class="media-stack">
+              <div class="media-stack__img media-stack__img--main">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
+                  alt="Oficina Corporate Lawyers"
+                  loading="lazy"
+                />
+              </div>
+              <div class="media-stack__img media-stack__img--secondary">
+                <img
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=80"
+                  alt="Equipo de asesores"
+                  loading="lazy"
+                />
+              </div>
+              <div class="media-stack__badge">
+                <strong>2010</strong>
+                <small>Fundada</small>
+              </div>
+            </div>
+          </div>
+          <div class="split-grid__text reveal-right">
+            <span class="eyebrow">Quiénes somos</span>
+            <h2 class="section-title">Un equipo <em class="gold-text">altamente especializado</em> a su servicio</h2>
+            <p>
+              En nuestra empresa, nos dedicamos a brindar asesorías y consultorías especializadas
+              con el fin de desarrollar soluciones legales y tributarias que protejan los derechos
+              de nuestros valiosos clientes.
+            </p>
+            <p>
+              En Corporate Lawyers Enterprise, nos destacamos por ser un equipo altamente
+              especializado en la prestación de servicios y asesorías legales de primera calidad
+              en áreas clave como derecho laboral, comercial y tributario. Buscamos comprender
+              a fondo las necesidades y objetivos únicos de cada cliente para brindar un
+              acompañamiento sólido y continuo.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                Equipo altamente capacitado en derecho laboral, comercial y tributario
+              </li>
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                Soluciones legales y tributarias personalizadas
+              </li>
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                Acompañamiento sólido y continuo en cada proceso
+              </li>
+              <li>
+                <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                Satisfacción del cliente como prioridad absoluta
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ STATS ══ -->
+    <section class="stats-bar">
+      <div class="container stats-bar__grid">
+        <div class="stat reveal-up" style="--d:.0s">
+          <strong class="counter" data-target="15">0</strong><span>+</span>
+          <p>Años en el sector legal</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat reveal-up" style="--d:.1s">
+          <strong class="counter" data-target="8">0</strong><span></span>
+          <p>Servicios especializados</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat reveal-up" style="--d:.2s">
+          <strong class="counter" data-target="3">0</strong><span></span>
+          <p>Ramas del derecho</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat reveal-up" style="--d:.3s">
+          <strong class="counter" data-target="100">0</strong><span>%</span>
+          <p>Enfoque personalizado</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ MISIÓN ══ -->
+    <section class="section mission" id="mision">
+      <div class="container">
+        <div class="split-grid split-grid--reverse">
+          <div class="split-grid__text reveal-left">
+            <span class="eyebrow">Nuestra Misión</span>
+            <h2 class="section-title">Proteger sus derechos con <em class="gold-text">excelencia</em></h2>
+            <p>
+              Nuestra misión es ofrecer servicios de asesoría legal y tributaria de la
+              más alta calidad, con un enfoque personalizado que priorice los intereses
+              y derechos de nuestros clientes.
+            </p>
+            <p>
+              Nos comprometemos a brindar soluciones efectivas, éticas y oportunas
+              en cada caso, porque creemos que cada cliente merece atención exclusiva.
+            </p>
+            <div class="quote-block">
+              <span class="quote-mark">&ldquo;</span>
+              <p>Cada caso es único. Cada cliente merece lo mejor.</p>
+            </div>
+          </div>
+          <div class="split-grid__media reveal-right">
+            <div class="media-stack media-stack--right">
+              <div class="media-stack__img media-stack__img--main">
+                <img
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80"
+                  alt="Asesor trabajando"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ VISIÓN ══ -->
+    <section class="section vision" id="vision">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-grid__media reveal-left">
+            <div class="media-stack">
+              <div class="media-stack__img media-stack__img--main">
+                <img
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
+                  alt="Edificios corporativos"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="split-grid__text reveal-right">
+            <span class="eyebrow">Nuestra Visión</span>
+            <h2 class="section-title">Referentes en <em class="gold-text">asesoría y acompañamiento legal</em></h2>
+            <p>
+              Buscamos convertirnos en una de las principales compañías en servicios de
+              asesoría y acompañamiento legal, destacándonos mediante soluciones integrales
+              y personalizadas que superen las expectativas de nuestros clientes.
+            </p>
+            <p>
+              Contamos con un gran equipo de asesores altamente capacitados y comprometidos,
+              orientados a brindar soluciones efectivas en derecho laboral, comercial y tributario,
+              adaptadas a las realidades jurídicas de cada empresa o persona natural.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ VALORES ══ -->
+    <section class="section values" id="valores">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="eyebrow center">Lo que nos define</span>
+          <h2 class="section-title center">Nuestros <em class="gold-text">valores</em></h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card reveal-up" style="--d:.0s">
+            <div class="value-card__number">01</div>
+            <div class="value-card__icon">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h3>Ética</h3>
+            <p>Actuamos con integridad y transparencia absoluta en cada proceso jurídico.</p>
+            <div class="value-card__line"></div>
+          </div>
+          <div class="value-card reveal-up" style="--d:.1s">
+            <div class="value-card__number">02</div>
+            <div class="value-card__icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Compromiso</h3>
+            <p>Nos dedicamos completamente a proteger los intereses de cada cliente.</p>
+            <div class="value-card__line"></div>
+          </div>
+          <div class="value-card reveal-up" style="--d:.15s">
+            <div class="value-card__number">03</div>
+            <div class="value-card__icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+            <h3>Excelencia</h3>
+            <p>Buscamos la más alta calidad en cada asesoría que ofrecemos.</p>
+            <div class="value-card__line"></div>
+          </div>
+          <div class="value-card reveal-up" style="--d:.2s">
+            <div class="value-card__number">04</div>
+            <div class="value-card__icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Confianza</h3>
+            <p>Construimos relaciones sólidas basadas en la confidencialidad.</p>
+            <div class="value-card__line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVICIOS ══ -->
+    <section class="section services" id="servicios">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="eyebrow center">Áreas de práctica</span>
+          <h2 class="section-title center">Nuestros <em class="gold-text">servicios</em></h2>
+          <p class="section-desc">
+            Ofrecemos una amplia gama de servicios legales especializados con soluciones
+            efectivas y personalizadas para proteger sus derechos.
+          </p>
+        </div>
+        <div class="services-grid">
+
+          <div class="service-card reveal-up" style="--d:.0s">
+            <div class="service-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h3>Asesoría Empresarial</h3>
+            <p>Constitución de compañías, contratos comerciales, reformas estatutarias, derecho
+            de consumo, comercio electrónico, disolución y liquidación de compañías, y asesoría
+            en compañías sin ánimo de lucro.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.05s">
+            <div class="service-card__icon"><i class="fa-solid fa-file-signature"></i></div>
+            <h3>Contratación Civil</h3>
+            <p>Asesoría en redacción y negociación de contratos laborales, operaciones sobre
+            establecimientos de comercio y contratos civiles y mercantiles de toda índole,
+            con respuestas claras a sus interrogantes.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.1s">
+            <div class="service-card__icon"><i class="fa-solid fa-gavel"></i></div>
+            <h3>Asesoría Legal</h3>
+            <p>Visión clara de los riesgos legales a los que puede enfrentarse su empresa,
+            con estrategias en contratos, litigios, propiedad intelectual, regulaciones
+            comerciales y cualquier otro aspecto jurídico.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.15s">
+            <div class="service-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>SAGRILAFT</h3>
+            <p>Asesoría e implementación del Sistema de Administración del Riesgo de Lavado
+            de Activos y Financiación del Terrorismo, desde el cumplimiento normativo hasta
+            la actualización de políticas internas.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.0s">
+            <div class="service-card__icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Derecho Laboral</h3>
+            <p>Contratación de personal, elaboración de contratos laborales, afiliaciones a
+            seguridad social, diseño de planes de beneficios en salud y consultorías laborales
+            para resolver cualquier conflicto en el ámbito laboral.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.05s">
+            <div class="service-card__icon"><i class="fa-solid fa-chart-bar"></i></div>
+            <h3>Asesoría Empresarial Tributaria</h3>
+            <p>Optimización de la carga tributaria, registro de beneficiarios finales, revisión
+            de contratos y transacciones para identificar riesgos fiscales y defensa jurídica
+            ante autoridades tributarias.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.1s">
+            <div class="service-card__icon"><i class="fa-solid fa-calculator"></i></div>
+            <h3>Planeación Tributaria</h3>
+            <p>Estrategias fiscales sólidas y estructuras legales para optimizar su situación
+            tributaria. Asesoría en impuestos nacionales, estructuras fiscales en adquisiciones
+            y actualización permanente en leyes y regulaciones vigentes.</p>
+          </div>
+
+          <div class="service-card reveal-up" style="--d:.15s">
+            <div class="service-card__icon"><i class="fa-solid fa-landmark"></i></div>
+            <h3>Labores Tributarias</h3>
+            <p>Gestión tributaria ante la DIAN: presentación y seguimiento de solicitudes de
+            saldo a favor para personas naturales y jurídicas, IVA en construcción de vivienda
+            de interés social y solicitudes de pagos en exceso.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACTO ══ -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="eyebrow center">Contáctenos</span>
+          <h2 class="section-title center">¿Listo para proteger <em class="gold-text">sus derechos</em>?</h2>
+          <p class="section-desc">Cuéntenos su caso. Nuestro equipo le brindará la orientación que necesita.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="info-item">
+              <div class="info-item__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <strong>Dirección</strong>
+                <span>Cra 94 a # 147 b - 05</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <strong>Correo electrónico</strong>
+                <a href="mailto:juridicolaboral@corporatelawyers.info">
+                  juridicolaboral@corporatelawyers.info
+                </a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <strong>Teléfono</strong>
+                <a href="tel:+573106255362">+57 310 6255362</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-item__icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/573106255362" target="_blank" rel="noopener">
+                  Escribir ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal-right" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="firstName" name="firstName" placeholder=" " required />
+                <label for="firstName">Nombre</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="lastName" name="lastName" placeholder=" " required />
+                <label for="lastName">Apellido</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " required />
+              <label for="email">Correo electrónico</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder=" " />
+              <label for="subject">Asunto</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Mensaje</label>
+            </div>
+            <button type="submit" class="btn btn--gold btn--full">
+              <span>Enviar mensaje</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <p class="form-feedback" id="formFeedback"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="nav__logo">
+          <span class="nav__logo-mark">CL</span>
+          <span class="nav__logo-text">Corporate<em>Lawyers</em></span>
+        </div>
+        <p>Asesoría legal y tributaria de confianza.<br/>Su derecho, nuestra misión.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="X / Twitter" class="social-link">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://wa.me/573106255362" aria-label="WhatsApp" class="social-link" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Acerca de</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <ul>
+          <li>Cra 94 a # 147 b - 05</li>
+          <li><a href="mailto:juridicolaboral@corporatelawyers.info">juridicolaboral@corporatelawyers.info</a></li>
+          <li><a href="tel:+573106255362">+57 310 6255362</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2035 Corporate Lawyers Enterprise. Todos los derechos reservados.</p>
+        <p>Diseñado con excelencia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
