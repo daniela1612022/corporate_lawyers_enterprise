@@ -307,7 +307,7 @@ body:has(button:hover) .cursor { width: 18px; height: 18px; }
   margin-right: auto;
 }
 .nav__logo-img {
-  height: 52px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -1256,7 +1256,7 @@ body:has(button:hover) .cursor { width: 18px; height: 18px; }
     padding: 0.5rem 0;
   }
   .nav__link::after     { bottom: 0; }
-  .nav__logo-img        { height: 40px; }
+  .nav__logo-img        { height: 54px; }
   .nav__cta             { display: none; }
   .nav__toggle          { display: flex; z-index: 101; }
 
